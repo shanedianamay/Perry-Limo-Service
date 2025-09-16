@@ -1,8 +1,124 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
+  margin: 0;
+  font-family: 'Great Vibes', cursive, 'Segoe Script', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f1f3f8, #e5cef8 90%);
   color: #222;
 }
-h1 {
-  color: #005fa3;
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(120,50,170,0.15);
+  padding: 2em 1.5em;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.limo-img {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 2px 20px #caa0ef;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+  margin: 0;
+  color: #7D5A9E;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #9b59b6;
+  letter-spacing: 1px;
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  color: #8278BC;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.about p {
+  font-size: 1.15em;
+}
+
+.services ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.services li {
+  font-size: 1.08em;
+  margin-bottom: 8px;
+}
+
+.booking form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.booking input,
+.booking select {
+  flex: 1 1 46%;
+  font-size: 1em;
+  padding: 9px;
+  border-radius: 8px;
+  border: 1px solid #c5adf7;
+  background: #f8f5ff;
+}
+
+.booking button {
+  flex-basis: 100%;
+  font-family: inherit;
+  background: linear-gradient(135deg, #7d5a9e 60%, #c5adf7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.15em;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px #c5adf754;
+}
+
+.booking button:hover {
+  box-shadow: 0 4px 18px #7d5a9e34;
+}
+
+.testimonial {
+  background: #f5ebff;
+  border-left: 5px solid #9b59b6;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #7d5a9e;
+  margin: 0 0 6px 0;
+}
+
+footer {
+  text-align: center;
+  color: #6f6199;
+  font-size: 0.9em;
+  margin-top: 14px;
+}
+
