@@ -1,24 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Great Vibes', cursive, 'Segoe Script', 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(135deg, #f1f3f8, #e5cef8 90%);
-  color: #222;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: #f9f7f6;
+  color: #3a2e4d;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #5c3a71; /* deep purple */
+  text-shadow: 1px 1px 2px #c3a674; /* soft gold shadow */
+}
 
 .container {
-  max-width: 700px;
-  margin: 30px auto;
-  background: rgba(255,255,255,0.95);
-  border-radius: 18px;
-  box-shadow: 0 6px 32px rgba(120,50,170,0.15);
-  padding: 2em 1.5em;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 2em 2.5em;
+  background: #fffaf2;
+  border: 1px solid #d6c5a0;
+  box-shadow: 0 8px 20px rgba(170, 145, 76, 0.25);
+  border-radius: 15px;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 24px;
+/* Elegant buttons */
+button {
+  background: linear-gradient(135deg, #ac7c05 0%, #d6b65a 100%);
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 26px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(214, 182, 90, 0.5);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #d6b65a 0%, #ac7c05 100%);
+}
+
+/* Links with classy gold underline */
+a {
+  color: #9a7e40;
+  text-decoration: none;
+  border-bottom: 1px solid #d6b65a;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ac7c05;
+}
+
+/* Form inputs */
+input, select {
+  border: 1px solid #d6b65a;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #3a2e4d;
+  background: #fffaf2;
+  margin-top: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .limo-img {
@@ -26,13 +71,6 @@ header {
   border-radius: 50%;
   box-shadow: 0 2px 20px #caa0ef;
   margin-bottom: 18px;
-}
-
-h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2.5em;
-  margin: 0;
-  color: #7D5A9E;
 }
 
 .subtitle {
@@ -43,13 +81,6 @@ h1 {
 
 section {
   margin-bottom: 28px;
-}
-
-h2 {
-  font-family: 'Great Vibes', cursive;
-  color: #8278BC;
-  font-size: 2em;
-  margin-top: 0;
 }
 
 .about p {
