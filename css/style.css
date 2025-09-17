@@ -3,29 +3,31 @@
 body {
   margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
-  background: #f9f7f6;
-  color: #3a2e4d;
+  background: linear-gradient(135deg, #141026, #292157 100%);
+  color: #eceaf4;
+  min-height: 100vh;
 }
 
 h1, h2, h3 {
   font-family: 'Great Vibes', cursive;
-  color: #5c3a71; /* deep purple */
-  text-shadow: 1px 1px 2px #c3a674; /* soft gold shadow */
+  color: #aea7ff;
+  text-shadow: 2px 2px 10px #43006e, 0 2px 8px #fff2;
 }
 
 .container {
   max-width: 720px;
   margin: 40px auto;
   padding: 2em 2.5em;
-  background: #fffaf2;
-  border: 1px solid #d6c5a0;
-  box-shadow: 0 8px 20px rgba(170, 145, 76, 0.25);
-  border-radius: 15px;
+  background: rgba(26, 21, 49, 0.86);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px 0 #8322ee60, 0 1.5px 18px #14102690;
+  border: 1px solid #382c4e;
+  backdrop-filter: blur(4px);
 }
 
-/* Elegant buttons */
+/* Sleek neon buttons */
 button {
-  background: linear-gradient(135deg, #ac7c05 0%, #d6b65a 100%);
+  background: linear-gradient(90deg, #7c3aed 0%, #00e5ff 100%);
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   border: none;
@@ -33,69 +35,84 @@ button {
   padding: 12px 26px;
   cursor: pointer;
   font-weight: 600;
-  transition: background 0.3s ease;
-  box-shadow: 0 4px 8px rgba(214, 182, 90, 0.5);
+  letter-spacing: .5px;
+  box-shadow: 0 2px 12px #00e5ff44, 0 1.5px 8px #7c3aed33;
+  transition: background 0.3s, box-shadow 0.3s;
 }
-
 button:hover {
-  background: linear-gradient(135deg, #d6b65a 0%, #ac7c05 100%);
+  background: linear-gradient(90deg, #00e5ff 0%, #7c3aed 100%);
+  box-shadow: 0 6px 14px #00e5ff88, 0 5px 24px #7c3aed66;
 }
 
-/* Links with classy gold underline */
+
+/* Cool links with glow effect */
 a {
-  color: #9a7e40;
+  color: #00e5ff;
   text-decoration: none;
-  border-bottom: 1px solid #d6b65a;
-  transition: color 0.3s ease;
+  border-bottom: 1.5px dotted #7c3aed;
+  transition: color 0.2s, border-bottom 0.3s;
+}
+a:hover {
+  color: #7c3aed;
+  border-bottom: 1.5px solid #00e5ff;
 }
 
-a:hover {
-  color: #ac7c05;
-}
 
 /* Form inputs */
 input, select {
-  border: 1px solid #d6b65a;
-  border-radius: 8px;
-  padding: 10px;
+  border: 1.5px solid #7c3aed;
+  border-radius: 9px;
+  background: #221a38d0;
+  color: #eee;
   font-family: 'Open Sans', sans-serif;
-  color: #3a2e4d;
-  background: #fffaf2;
+  padding: 10px;
   margin-top: 8px;
   width: 100%;
   box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.3s, background 0.3s;
 }
+input:focus, select:focus {
+  border-color: #00e5ff;
+  background: #292157fa;
+}
+
 
 .limo-img {
   width: 120px;
   border-radius: 50%;
-  box-shadow: 0 2px 20px #caa0ef;
+  box-shadow: 0 2px 22px #7c3aed, 0 0 0px 8px #00e5ff13;
   margin-bottom: 18px;
+  border: 2.5px solid #aea7ff;
 }
+
 
 .subtitle {
   font-size: 1.1em;
-  color: #9b59b6;
+  color: #00e5ff;
+  text-shadow: 0 1px 8px #7c3aed88;
   letter-spacing: 1px;
 }
 
 section {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .about p {
-  font-size: 1.15em;
+  font-size: 1.18em;
+  color: #c2c0df;
 }
 
 .services ul {
   margin-top: 0;
   padding-left: 20px;
 }
-
 .services li {
-  font-size: 1.08em;
+  font-size: 1.09em;
   margin-bottom: 8px;
+  color: #aea7ff;
 }
+
 
 .booking form {
   display: flex;
@@ -107,11 +124,6 @@ section {
 .booking input,
 .booking select {
   flex: 1 1 46%;
-  font-size: 1em;
-  padding: 9px;
-  border-radius: 8px;
-  border: 1px solid #c5adf7;
-  background: #f8f5ff;
 }
 
 .booking button {
@@ -132,24 +144,30 @@ section {
   box-shadow: 0 4px 18px #7d5a9e34;
 }
 
+
+
 .testimonial {
-  background: #f5ebff;
-  border-left: 5px solid #9b59b6;
-  padding: 14px 18px;
-  border-radius: 10px;
+  background: linear-gradient(90deg, #221a38be, #36308cbb);
+  border-left: 4px solid #00e5ff;
+  padding: 16px 23px;
+  border-radius: 11px;
   margin-bottom: 24px;
+  box-shadow: 0 2px 14px #00e5ff22;
 }
+
 
 blockquote {
   font-style: italic;
-  color: #7d5a9e;
+  color: #e3e1ff;
   margin: 0 0 6px 0;
+  text-shadow: 0 1px 7px #7c3aed;
 }
 
 footer {
   text-align: center;
-  color: #6f6199;
+  color: #aea7ff;
   font-size: 0.9em;
-  margin-top: 14px;
+  margin-top: 18px;
+  text-shadow: 0 1.5px 5px #7c3aed44;
 }
 
